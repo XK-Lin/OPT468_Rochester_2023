@@ -1,5 +1,5 @@
 # 468-Project
 
-The main file is `wvg.m`, which depends on other `.m` files. You may want to change the parameters in `wvgonce.m`.
+The main file is `viewspectrum.m`, which depends on all other `.m` files. To view the fields, we need to use fimmwave.
 
 The Python files and Jupyter notebooks are due to Mingzhe and Ping.

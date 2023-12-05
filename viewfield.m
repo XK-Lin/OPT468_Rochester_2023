@@ -1,6 +1,6 @@
 clear; close all; clc
-lambda = 2.08e-6;
-ifsave = false;
+lambda = 2.09e-6;
+ifsave = true;
 wvgonce
 textp = [-0.9, -0.2, 0.6, 0.6, 0, -0.6, -0.2, -1];
 s = 3;
@@ -26,9 +26,9 @@ text(textp(2), textp(5), nwname, 'FontSize', 18)
 if s == 1;
     text(textp(2), textp(4), nsname, 'FontSize', 18)
 elseif s == 2
-    text(textp(7), textp(4), '$\mathrm{Blood}$', 'FontSize', 18)
+    text(textp(7), textp(4), '$\mathrm{Water}$', 'FontSize', 18)
 elseif s ==3
-    text(textp(8), textp(4), "$" + num2str((1 - concentration) * 100, '%.2f') + "\%\ \mathrm{Blood}+" +...
+    text(textp(8), textp(4), "$" + num2str((1 - concentration) * 100, '%.2f') + "\%\ \mathrm{Water}+" +...
             num2str(concentration * 100, '%.2f') + "\%\ \mathrm{Ethanol}$", 'FontSize', 18)
 else
         error('Undefined substrate number. (1, 2, 3)')
@@ -139,8 +139,8 @@ if ifsave
     if s == 1
         print(figure(1), 'ei_bus.png', '-dpng', '-r400')
     elseif s == 2
-        print(figure(1), 'ei_blood.png', '-dpng', '-r400')
+        print(figure(1), 'ei_H2O.png', '-dpng', '-r400')
     elseif s ==3
-        print(figure(1), 'ei_blood_ethanol.png', '-dpng', '-r400')
+        print(figure(1), 'ei_H2O_ethanol.png', '-dpng', '-r400')
     end
 end

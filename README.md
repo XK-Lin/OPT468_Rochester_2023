@@ -1,5 +1,5 @@
 # 468-Project
 
-The main file is `viewspectrum.m`, which depends on all other `.m` files. To view the fields, we need to use fimmwave.
+The main files are `viewspectrum.m` and `viewfield.m`, which depend on all other `.m` files. `nee.m` and `effi.m` are Effective Index routines; `wvg.m` and `wvgfields.m` are class definitions.
 
-The Python files and Jupyter notebooks are due to Mingzhe and Ping.
+The Jupyter Notebook is due to Mingzhe and Ping.
